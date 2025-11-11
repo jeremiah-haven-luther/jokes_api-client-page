@@ -73,7 +73,7 @@ function addJokes(jokes){
 }
 
 async function queryAPI(apiQuery){
-    const BASE_URL = "http://localhost:5000/api/v1/jokes/";
+    const BASE_URL = "https://jokes-api-server-65re.onrender.com/api/v1/jokes/";
     return await fetch(`${BASE_URL}${apiQuery}`).then(response => response.json());
 }
 
