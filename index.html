@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyJokes</title>
+    <link rel="stylesheet" href="site.css">
+    <script src="main.js" type="module" defer></script>
+</head>
+<body>
+    <header class="hero is-primary">
+        <div class="container hero-body">
+            <h1 class="title">PyJokes</h1>
+            <p class="subtitle">Get ye a Py Joke!</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="form">
+                <div class="field column">
+                    <label>Language</label>
+                    <br>
+                    <div class="select">
+                        <select id="selLang"></select>
+                    </div>
+                </div>
+                <div class="field column">
+                    <label>Category</label>
+                    <br>
+                    <div class="select">
+                        <select id="selCat"></select>
+                    </div>
+                </div>
+                <div class="field column">
+                    <label>Number</label>
+                    <br>
+                    <div class="select">
+                        <select id="selNum"></select>
+                    </div>
+                </div>
+                <div class="field column">
+                    <label>Specific Joke ID</label>
+                    <input class="input is-info" id="jokeId" type="number">
+                </div>
+
+                <div class="form">
+                    <button class="button is-link retrieve" id="btnAmuse">Get Jokes!</button>
+                </div>
+            </div>
+
+            <div id="jokes"></div>
+        </div>
+    </main>
+</body>
+</html>
